@@ -967,28 +967,28 @@ export default defineConfig({
 
 ## Implementation Checklist
 
-### Phase 1: Fix Image Tools
+### Phase 1: Fix Image Tools (COMPLETED 2026-01-30)
 
-- [ ] **1.1 Clone image-studio repo locally**
-- [ ] **1.2 Fix localPath in fetcher.ts**
-  - [ ] Change line 109 to use relative path
+- [x] **1.1 Clone image-studio repo locally**
+- [x] **1.2 Fix localPath in fetcher.ts**
+  - [x] Change line 109 to use relative path
   - [ ] Test with `image-studio fetch landscaping`
   - [ ] Verify returned path matches actual file
-- [ ] **1.3 Fix localPath in generator.ts**
-  - [ ] Change line 96
-- [ ] **1.4 Fix localPath in api.ts**
-  - [ ] Change line 331
-- [ ] **1.5 Fix deprecated substr in analyzer.ts**
-  - [ ] Change lines 25-26, 54-56
-- [ ] **1.6 Add better return types to fetchImage**
-- [ ] **1.7 Run tests / verify build**
-- [ ] **1.8 Commit and push fixes**
+- [x] **1.3 Fix localPath in generator.ts**
+  - [x] Change line 96
+- [x] **1.4 Fix localPath in api.ts**
+  - [x] Change line 331
+- [x] **1.5 Fix deprecated substr in analyzer.ts**
+  - [x] Change lines 25-26, 54-56
+- [ ] **1.6 Add better return types to fetchImage** (deferred - nice to have)
+- [x] **1.7 Run tests / verify build**
+- [x] **1.8 Commit and push fixes**
 
-### Phase 2: Deprecation
+### Phase 2: Deprecation (COMPLETED 2026-01-30)
 
-- [ ] **2.1 Add deprecation notice to astro-unsplash-integration README**
+- [x] **2.1 Add deprecation notice to astro-unsplash-integration README**
 - [ ] **2.2 Update AUDIT_v2 docs with new patterns**
-- [ ] **2.3 Create migration guide for existing projects**
+- [x] **2.3 Create migration guide for existing projects** (included in README)
 
 ### Phase 3: New Base Template
 
