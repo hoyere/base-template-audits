@@ -32,20 +32,44 @@ Review official recommendations from Astro, Tailwind, TypeScript teams.
 
 ## Research Checklist
 
-### 5.1 Git History Review
+### 5.1 Git History Review (COMPLETED 2026-01-30)
+
+**Output:** [GIT_HISTORY_MINOR_PATTERNS.md](./GIT_HISTORY_MINOR_PATTERNS.md)
 
 #### 5.1.1 Review Existing Analysis
-- [ ] Re-read CROSS_REPO_ANALYSIS.md for non-image issues
-- [ ] Categorize minor recurring patterns
-- [ ] List CSS/styling issues that appeared multiple times
-- [ ] List component structure issues
-- [ ] List accessibility fixes that were made
-- [ ] List performance optimizations that were applied
+- [x] Re-read CROSS_REPO_ANALYSIS.md for non-image issues
+- [x] Categorize minor recurring patterns
+- [x] List CSS/styling issues that appeared multiple times
+- [x] List component structure issues
+- [x] List accessibility fixes that were made
+- [x] List performance optimizations that were applied
 
 #### 5.1.2 Identify Pattern Categories
-- [ ] Create list of "code smell" patterns to avoid
-- [ ] Create list of "good patterns" that solved problems
-- [ ] Note any refactoring patterns that improved code
+- [x] Create list of "code smell" patterns to avoid
+- [x] Create list of "good patterns" that solved problems
+- [x] Note any refactoring patterns that improved code
+
+#### 5.1.3 Findings Summary
+
+**9 Minor Pattern Categories Identified:**
+
+| Category | Mentions | Priority |
+|----------|----------|----------|
+| Typography/Text | 9+ | P1 |
+| Mobile/Responsive | 18 | P2 |
+| Color/Theme | 36 | Done |
+| Layout | 7 | P1 |
+| SEO | 9 | Done |
+| Footer | 8 | P3 |
+| Deployment | 6+ | P1 |
+| Background Images | 25+ | P2 |
+| Component-specific | Various | P2 |
+
+**P1 Quick Wins to Implement:**
+1. Typography scale in CSS variables
+2. Spacing scale standardization
+3. Background image utilities
+4. Deployment config templates (netlify.toml, vercel.json)
 
 ---
 
