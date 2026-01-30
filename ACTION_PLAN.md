@@ -987,67 +987,77 @@ export default defineConfig({
 ### Phase 2: Deprecation (COMPLETED 2026-01-30)
 
 - [x] **2.1 Add deprecation notice to astro-unsplash-integration README**
-- [ ] **2.2 Update AUDIT_v2 docs with new patterns**
+- [ ] **2.2 Update AUDIT_v2 docs with new patterns** (deferred to Phase 4)
 - [x] **2.3 Create migration guide for existing projects** (included in README)
 
-### Phase 3: New Base Template
+### Phase 3: New Base Template (IN PROGRESS)
 
-#### Week 1: Foundation
-- [ ] **3.1 Create new repo: astro-local-business-v2**
-- [ ] **3.2 Initialize Astro 5.x project**
-- [ ] **3.3 Install dependencies**
-  - [ ] `@tailwindcss/vite`
-  - [ ] `@astrojs/sitemap`
-- [ ] **3.4 Create directory structure**
-- [ ] **3.5 Set up tsconfig.json with path aliases**
-- [ ] **3.6 Create global.css with @theme block**
-- [ ] **3.7 Create site.config.ts**
-- [ ] **3.8 Create BaseLayout.astro**
-- [ ] **3.9 Create Header.astro with stability patterns**
-- [ ] **3.10 Create Footer.astro**
-- [ ] **3.11 Test: Header doesn't shift on scroll**
+#### Week 1: Foundation (COMPLETED 2026-01-30)
+- [x] **3.1 Create new repo: astro-local-business-v2**
+- [x] **3.2 Initialize Astro 5.x project**
+- [x] **3.3 Install dependencies**
+  - [x] `@tailwindcss/vite`
+  - [x] `@astrojs/sitemap`
+- [x] **3.4 Create directory structure**
+- [x] **3.5 Set up tsconfig.json with path aliases**
+- [x] **3.6 Create global.css with @theme block**
+- [x] **3.7 Create site.config.ts**
+- [x] **3.8 Create BaseLayout.astro**
+- [x] **3.9 Create Header.astro with stability patterns**
+- [x] **3.10 Create Footer.astro**
+- [ ] **3.11 Test: Header doesn't shift on scroll** (manual step - requires browser)
 
-#### Week 2: Components
-- [ ] **3.12 Create lib/images.ts utilities**
-- [ ] **3.13 Create OptimizedImage.astro**
-- [ ] **3.14 Create Button.astro**
-- [ ] **3.15 Create Container.astro**
-- [ ] **3.16 Create Hero.astro (3 variants)**
-- [ ] **3.17 Create Services.astro**
-- [ ] **3.18 Create About.astro**
-- [ ] **3.19 Create Team.astro**
-- [ ] **3.20 Create Testimonials.astro**
-- [ ] **3.21 Create Contact.astro**
-- [ ] **3.22 Create CTA.astro**
+#### Week 2: Components (MOSTLY COMPLETE)
+- [x] **3.12 Create lib/images.ts utilities**
+- [x] **3.14 Create Button.astro**
+- [x] **3.15 Create Container.astro**
+- [x] **3.17 Create Services.astro**
+- [x] **3.18 Create About.astro**
+- [x] **3.19 Create Team.astro**
+- [x] **3.20 Create Testimonials.astro**
+- [x] **3.21 Create Contact.astro**
+- [x] **3.22 Create CTA.astro**
+- [x] **3.22b Create FAQ.astro** (bonus)
+- [x] **3.22c Create Gallery.astro** (bonus)
 
-#### Week 3: Content & Pages
-- [ ] **3.23 Create content.config.ts with schemas**
-- [ ] **3.24 Add sample content (services, team, testimonials)**
-- [ ] **3.25 Download sample images with image-studio**
-- [ ] **3.26 Create index.astro**
-- [ ] **3.27 Create about.astro**
-- [ ] **3.28 Create services/index.astro**
-- [ ] **3.29 Create services/[slug].astro**
-- [ ] **3.30 Create contact.astro**
-- [ ] **3.31 Create 404.astro**
+**Remaining Week 2 (reordered):**
+- [ ] **3.25 Download sample images with image-studio** (manual step - use image-studio CLI)
+- [x] **3.13 Create OptimizedImage.astro** ✓ 2026-01-30
+- [x] **3.16 Create Hero.astro image variants** (split, overlay) ✓ 2026-01-30
 
-#### Week 4: Polish
-- [ ] **3.32 Create BaseHead.astro (SEO)**
-- [ ] **3.33 Add OpenGraph component**
-- [ ] **3.34 Create ThemeToggle.astro**
-- [ ] **3.35 Add dark mode with view transition support**
-- [ ] **3.36 Create ATTRIBUTION.md**
-- [ ] **3.37 Create README.md with customization guide**
-- [ ] **3.38 Run Lighthouse audit (target: 95+)**
-- [ ] **3.39 Test in multiple browsers**
-- [ ] **3.40 Final commit and push**
+#### Week 3: Content & Pages (COMPLETED 2026-01-30)
+- [x] **3.23 Create content.config.ts with schemas**
+- [x] **3.24 Add sample content (services, team, testimonials)**
+- [x] **3.26 Create index.astro**
+- [x] **3.27 Create about.astro**
+- [x] **3.28 Create services/index.astro**
+- [x] **3.29 Create services/[...slug].astro**
+- [x] **3.30 Create contact.astro**
+- [x] **3.31 Create 404.astro**
+- [x] **3.31b Create privacy.astro** (bonus)
+
+#### Week 4: Polish (PARTIALLY COMPLETE)
+- [x] **3.32 SEO in BaseLayout** (meta tags, OG, Twitter cards)
+- [x] **3.33 Add LocalBusinessSchema component**
+- [x] **3.33b Add BreadcrumbSchema component** (bonus)
+- [x] **3.34 Create ThemeToggle.astro**
+- [x] **3.35a Add dark mode with localStorage persistence**
+
+**Remaining Week 4:**
+- [x] **3.35b Add view transitions support** ✓ 2026-01-30
+- [x] **3.36 Create ATTRIBUTION.md** ✓ 2026-01-30
+- [x] **3.37 Create README.md with customization guide** ✓ 2026-01-30
+- [ ] **3.38 Run Lighthouse audit (target: 95+)** (manual step - requires browser)
+- [ ] **3.39 Test in multiple browsers** (manual step)
+- [x] **3.40 Final commit and push** ✓ 2026-01-30
 
 ### Phase 4: Documentation
 
 - [ ] **4.1 Create TEMPLATE_CUSTOMIZATION.md**
 - [ ] **4.2 Create IMAGE_WORKFLOW.md**
 - [ ] **4.3 Create COMMON_EDITS.md**
-- [ ] **4.4 Update this repo's README with links**
+- [ ] **4.4 Update AUDIT_v2 docs with new patterns** (moved from 2.2)
+- [ ] **4.5 Update this repo's README with links**
 
 ---
 
