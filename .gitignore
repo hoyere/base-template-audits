@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cloned repos for analysis (don't track these)
+astro-unsplash-integration/
+unsplash-image-fetcher/
+template-audit-docs/
+astro-local-business-base/
+git-audit-data/
+
+# Analyzed template repos
+astro-law-dctm/
+astro-hvac-template/
+astro-landscaping-greenova/
+astro-handyman-houzfix/
+astro-carpenter-craftmax/
+astro-automobile-repair-autorex/
+astro-barber-qutter/
+astro-restaurant-template/
